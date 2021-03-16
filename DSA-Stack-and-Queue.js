@@ -46,13 +46,12 @@ function peek (stack) {
 }
 
 function display (stack) {
-    let currNode = stack.top;
-    if (currNode === null) console.log('empty stack');
-    while (currNode.next !== null) {
-      console.log(currNode.data);
-      currNode = currNode.next;
+    if (stack.top === null) console.log('empty stack');
+    while (stack.top.next !== null) {
+      console.log(stack.top.data);
+      stack.top = stack.top.next;
     }
-    console.log(currNode.data);
+    console.log(stack.top.data);
 }
 
 
