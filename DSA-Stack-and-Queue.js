@@ -37,12 +37,19 @@ class Stack {
 }
 
 function isEmpty (stack) {
-    if (stack.top === null) return console.log(true)
+    if (stack.top === null) {
+        console.log(true)
+        return true
+    } else {
+        console.log(false)
+        return false
+    }
 }
 
 function peek (stack) {
     if (!stack.top) return console.log('empty peek stack')
-    return console.log(stack.top.data)
+    console.log(stack.top.data)
+    return stack.top.data
 }
 
 function display (stack) {
@@ -50,34 +57,32 @@ function display (stack) {
         return console.log('empty display stack')
     }
     while (stack.top.next !== null) {
-      console.log(stack.top.data)
+      console.log(stack.top.data, stack.top.data.length)
       stack.top = stack.top.next
     }
-    console.log(stack.top.data)
+    console.log(stack.top.data, stack.top.data.length)
 }
 
 function main() {
     const starTrek = new Stack()
 
-    // isEmpty(starTrek)
-    
-    
-
+    //isEmpty(starTrek)
     starTrek.push('Kirk')
     starTrek.push('Jim')
-    starTrek.pop()
+    // starTrek.pop()
     starTrek.push('McCoy')
-    
     // starTrek.push('Scotty')
 
-    // isEmpty(starTrek)
-    //peek(starTrek)
-    display(starTrek)
+    //isEmpty(starTrek)
+    peek(starTrek)
+    //display(starTrek)
      
 }
  
 main()
 
+
+'3. Check for palindromes using a stack'
 let testString1 = 'Noon  '
 let testString2 = 'wilukuliW'
 
@@ -91,3 +96,18 @@ function is_palindrome(s) {
 }
 
 //is_palindrome(testString2)
+
+'5. Sort stack'
+
+function sortedStack (stack) {
+    let newStack = new Stack()
+    while (!isEmpty(stack)) {
+        let variable = stack.pop()
+        if (variable > peek(newStack)) {
+            stack.push(newStack.pop())
+            console.log(variable)
+        } 
+    }
+}
+
+sortedStack()
