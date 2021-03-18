@@ -64,7 +64,7 @@ function display (stack) {
 }
 
 function main() {
-    const starTrek = new Stack()
+    let starTrek = new Stack()
 
     //isEmpty(starTrek)
     starTrek.push('Kirk')
@@ -99,15 +99,15 @@ function is_palindrome(s) {
 
 '5. Sort stack'
 
-function sortedStack (stack) {
-    let newStack = new Stack()
-    while (!isEmpty(stack)) {
-        let variable = stack.pop()
-        if (variable.length > peek(newStack)) {
-            stack.push(newStack.pop())
-            console.log(variable)
-        } 
-    }
-}
+// function sortedStack (stack) {
+//     let newStack = new Stack()
+//     while (!isEmpty(stack)) {
+//         let variable = stack.pop()
+//         if (variable.length > peek(newStack)) {
+//             stack.push(newStack.pop())
+//             console.log(variable)
+//         } 
+//     }
+// }
 
-sortedStack(list)
+// sortedStack(list)
