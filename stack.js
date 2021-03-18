@@ -103,11 +103,11 @@ function sortedStack (stack) {
     let newStack = new Stack()
     while (!isEmpty(stack)) {
         let variable = stack.pop()
-        if (variable > peek(newStack)) {
+        if (variable.length > peek(newStack)) {
             stack.push(newStack.pop())
             console.log(variable)
         } 
     }
 }
 
-sortedStack()
+sortedStack(list)
