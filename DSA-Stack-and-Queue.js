@@ -37,39 +37,57 @@ class Stack {
 }
 
 function isEmpty (stack) {
-    return (stack.top === null);
+    if (stack.top === null) return console.log(true)
 }
 
 function peek (stack) {
-    if (!stack.top) return null;
-    return stack.top.data;
+    if (!stack.top) return console.log('empty peek stack')
+    return console.log(stack.top.data)
 }
 
 function display (stack) {
-    if (stack.top === null) console.log('empty stack');
-    while (stack.top.next !== null) {
-      console.log(stack.top.data);
-      stack.top = stack.top.next;
+    if (!stack.top) {
+        return console.log('empty display stack')
     }
-    console.log(stack.top.data);
+    while (stack.top.next !== null) {
+      console.log(stack.top.data)
+      stack.top = stack.top.next
+    }
+    console.log(stack.top.data)
 }
-
 
 function main() {
     const starTrek = new Stack()
 
-    // console.log(isEmpty(starTrek))
+    // isEmpty(starTrek)
     
-    starTrek.push('Kirk')
-    // starTrek.pop()
-    starTrek.push('Spock')
-    starTrek.push('McCoy')
-    starTrek.push('Scotty')
+    
 
-    console.log(peek(starTrek))
+    starTrek.push('Kirk')
+    starTrek.push('Jim')
+    starTrek.pop()
+    starTrek.push('McCoy')
     
-    // display(starTrek)
-    
+    // starTrek.push('Scotty')
+
+    // isEmpty(starTrek)
+    //peek(starTrek)
+    display(starTrek)
+     
 }
  
 main()
+
+let testString1 = 'Noon  '
+let testString2 = 'wilukuliW'
+
+function is_palindrome(s) {
+    s = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
+    console.log(s)
+    let firstHalf = ''
+    let secondHalf = ''
+    firstHalf = Math.floor(s.length/2)
+    console.log(firstHalf)
+}
+
+//is_palindrome(testString2)
