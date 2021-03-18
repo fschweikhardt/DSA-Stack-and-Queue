@@ -58,17 +58,18 @@ function display (stack) {
 function main() {
     const starTrek = new Stack()
 
-    console.log(isEmpty(starTrek))
-    console.log(peek(starTrek))
-
+    // console.log(isEmpty(starTrek))
+    
     starTrek.push('Kirk')
+    // starTrek.pop()
     starTrek.push('Spock')
     starTrek.push('McCoy')
     starTrek.push('Scotty')
 
-    display(starTrek)
     console.log(peek(starTrek))
-
+    
+    // display(starTrek)
+    
 }
  
 main()
