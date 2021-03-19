@@ -81,4 +81,26 @@ function main() {
     display(starTrek)
 }
 
-main()
+//main()
+
+
+'10. The Ophidian Bank'
+
+function bank() {
+    let longLine = new Queue()
+
+    longLine.enqueue('Jamie')
+    longLine.enqueue('Linda')
+    longLine.enqueue('Steve')
+    longLine.enqueue('Wendy')
+    longLine.enqueue('Iris')
+    longLine.enqueue('Pat')
+
+    display(longLine)
+}
+
+bank()
+
+function lobby(bank) {
+    
+}
