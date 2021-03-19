@@ -86,21 +86,20 @@ function main() {
 
 '10. The Ophidian Bank'
 
-function bank() {
-    let longLine = new Queue()
-
-    longLine.enqueue('Jamie')
-    longLine.enqueue('Linda')
-    longLine.enqueue('Steve')
-    longLine.enqueue('Wendy')
-    longLine.enqueue('Iris')
-    longLine.enqueue('Pat')
-
-    display(longLine)
-}
-
-bank()
+let longLine = new Queue()
+longLine.enqueue('Jamie')
+longLine.enqueue('Linda')
+longLine.enqueue('Steve')
+longLine.enqueue('Wendy')
+longLine.enqueue('Iris')
+longLine.enqueue('Pat')
+ 
 
 function lobby(bank) {
-    
+    //let newLine = new Queue
+    //pop off 25% at random to back of the line
+    //return newLine
+    return display(bank)
 }
+
+console.log(lobby(longLine))
