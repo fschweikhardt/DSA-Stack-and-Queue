@@ -74,7 +74,7 @@ function main() {
     // starTrek.push('Scotty')
 
     //isEmpty(starTrek)
-    peek(starTrek)
+    display(starTrek)
     //display(starTrek)
      
 }
