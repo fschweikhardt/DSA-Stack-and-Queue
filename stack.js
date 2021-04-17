@@ -111,3 +111,7 @@ function is_palindrome(s) {
 // }
 
 // sortedStack(list)
+
+'4. Matching parentheses in an expression'
+
+'5. Sort stack'

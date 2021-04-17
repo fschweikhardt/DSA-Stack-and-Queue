@@ -83,6 +83,11 @@ function main() {
 
 //main()
 
+'7. Create a queue class using Doubly linked List'
+
+'8. Queue implementation using a stack'
+
+'9. Square dance pairing'
 
 '10. The Ophidian Bank'
 
